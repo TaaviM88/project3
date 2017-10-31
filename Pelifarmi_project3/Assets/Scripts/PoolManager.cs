@@ -1,16 +1,24 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-
+using System.Linq;
 public class PoolManager : MonoBehaviour {
-
+    public static PoolManager current;
+    public GameObject bulletPrefab;
+    private List<GameObject> bullets = new List<GameObject>();
 	// Use this for initialization
-	void Start () {
-		
+	void Awake () {
+        current = this;
+        for (int i = 0; i < 320; i++)
+        {
+            GameObject bullet = GameObject.Instantiate(bulletPrefab);
+            bullet.transform.parent = this.transform;
+            bullet.SetActive(false);
+            bullets.Add(bullet);
+        }
 	}
-	
-	// Update is called once per frame
-	void Update () {
-		
-	}
+    public GameObject GetBullet()
+    {
+        return bullets.FirstOrDefault(x => !x.activeInHierarchy);
+    }
 }
