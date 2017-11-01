@@ -69,6 +69,7 @@ public class EnemyHealth : MonoBehaviour
         if (coll.gameObject.tag == "Bullet")
         {
             TakeDamage();
+            coll.gameObject.SendMessage("Destroy");
         }
     }
 

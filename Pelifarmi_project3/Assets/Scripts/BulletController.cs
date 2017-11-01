@@ -26,7 +26,7 @@ public class BulletController : MonoBehaviour {
         //transform.position += bulletMovement;
         
         //transform.localRotation *= Quaternion.Euler(bulletRotation);
-        _rb.AddForce(-1*transform.right * speed * Time.deltaTime, ForceMode2D.Impulse);
+        _rb.AddForce(-1*transform.right * speed, ForceMode2D.Impulse);
 
 	}
     void OnEnable()
@@ -76,7 +76,7 @@ public class BulletController : MonoBehaviour {
     private void OnCollisionEnter2D(Collision2D coll)
     {
        // if (coll.gameObject.tag == "Enemy" || coll.gameObject.tag == "Obstacle")
-        if(coll.gameObject.tag == "Obstacle")
+        if(coll.gameObject.tag == "CameraCollision")
         {
             Destroy();
         }

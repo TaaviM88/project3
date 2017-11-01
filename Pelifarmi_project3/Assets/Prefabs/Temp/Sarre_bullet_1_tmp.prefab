@@ -99,6 +99,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7dc30767af11f394d977ba20889240bd, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  speed: 10
+  deathTimer: 2
   powerUpInt: 0
   chooseSide: 1
   hshot: -1
@@ -144,3 +146,4 @@ SpriteRenderer:
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
+  m_MaskInteraction: 0
