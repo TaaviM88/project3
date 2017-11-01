@@ -10,7 +10,7 @@ public class EnemyHealth : MonoBehaviour
 	public int currentHealth;
 	public int scoreValue = 10;
 	public AudioClip deathClip;
-
+    public int amount = 10;
 	Animator anim;
 	AudioSource enemyAudio;
 	ParticleSystem hitParticles;
@@ -33,7 +33,7 @@ public class EnemyHealth : MonoBehaviour
 		
 	}
 
-	public void TakeDamage (int amount, Vector2 hitPoint)
+	public void TakeDamage ()
 	{
 		if(isDead)
 			return;
@@ -63,6 +63,14 @@ public class EnemyHealth : MonoBehaviour
 		enemyAudio.Play ();
 		Destroy (gameObject, 2f);
 	}
+
+    private void OnCollisionEnter2D(Collision2D coll)
+    {
+        if (coll.gameObject.tag == "Bullet")
+        {
+            TakeDamage();
+        }
+    }
 
 
 }

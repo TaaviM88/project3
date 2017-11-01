@@ -16,8 +16,8 @@ TagManager:
   - 
   - Player
   - Bullet
-  - 
-  - 
+  - CameraCollision
+  - Ignore
   - 
   - 
   - 

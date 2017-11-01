@@ -3,7 +3,8 @@ using System.Collections.Generic;
 using UnityEngine;
 
 public class BulletController : MonoBehaviour {
-    private float speed = 7f;
+    public float speed = 7f;
+    public float deathTimer = 2f;
     public int powerUpInt = 0;
     private Vector3 bulletMovement;
     private Vector3 bulletRotation;
@@ -60,7 +61,7 @@ public class BulletController : MonoBehaviour {
 
                 break;
         }
-        Invoke("Destroy", 2f);
+        Invoke("Destroy", deathTimer);
     }
 
     void Destroy()
@@ -74,7 +75,8 @@ public class BulletController : MonoBehaviour {
 
     private void OnCollisionEnter2D(Collision2D coll)
     {
-        if (coll.gameObject.tag == "Enemy" || coll.gameObject.tag == "Obstacle")
+       // if (coll.gameObject.tag == "Enemy" || coll.gameObject.tag == "Obstacle")
+        if(coll.gameObject.tag == "Obstacle")
         {
             Destroy();
         }

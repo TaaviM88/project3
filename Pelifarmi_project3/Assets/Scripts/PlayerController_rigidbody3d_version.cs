@@ -2,21 +2,21 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class PlayerController : MonoBehaviour {
-    //float roationSpeed = 10.0f;
-    public float thrustForce = 5000f;
-    public float breakVelocity = 0.95f;
-    Rigidbody2D _rb;
+public class PlayerController_rigidbody3d_version : MonoBehaviour
+{
+    float roationSpeed = 10.0f;
+    float thrustForce = 500f;
+    Rigidbody _rb;
     bool _isFiring;
     bool bulletsleft;
-    public float firerate = 0.05f;
+    private float firerate = 0.05f;
     private float nextfire = 0.0f;
 	// Use this for initialization
 	void Start () {
         GameObject obj = GameObject.FindGameObjectWithTag("MainCamera");
         obj.gameObject.SendMessage("Start");
         obj.gameObject.SendMessage("GoToPlayer");
-        _rb = GetComponent<Rigidbody2D>();
+        _rb = GetComponent<Rigidbody>();
 	}
 	
 	// Update is called once per frame
@@ -40,14 +40,15 @@ public class PlayerController : MonoBehaviour {
         Vector2 positionOnScreen = Camera.main.WorldToViewportPoint(transform.position);
         Vector2 mouseOnScreen = (Vector2)Camera.main.ScreenToViewportPoint(Input.mousePosition);
         float angle = AngleBetweenTwoPoints(positionOnScreen, mouseOnScreen);
-        transform.rotation = Quaternion.Euler(new Vector3(0f, 0f, angle));
+        //transform.rotation = Quaternion.Euler(new Vector3(transform.rotation.x, transform.rotation.y,angle));
+        _rb.MoveRotation(Quaternion.Euler(new Vector3(transform.rotation.x, transform.rotation.y,angle)));
 
         if (_isFiring == true && bulletsleft)
         {
             _rb.AddForce(transform.right * thrustForce * Time.deltaTime);
             //transform.position = Vector2.right * thrustForce * Time.deltaTime;
         }
-        else { _rb.velocity = _rb.velocity * breakVelocity; }
+        else { _rb.velocity = _rb.velocity * 0.95f;}
     }
 
     public float AngleBetweenTwoPoints(Vector3 a, Vector3 b)
