@@ -15,6 +15,7 @@ public class BulletController : MonoBehaviour {
     Vector2 positionOnScreen;
     Vector2 mouseOnScreen;
     Rigidbody2D _rb;
+    public GameObject explosionprefab;
 	// Use this for initialization
 	void Start () {
         _rb = GetComponent<Rigidbody2D>();
@@ -66,6 +67,9 @@ public class BulletController : MonoBehaviour {
 
     void Destroy()
     {
+        GameObject explosion = GameObject.Instantiate(explosionprefab);
+        explosion.transform.position = this.transform.position;
+        //Instantiate(explosion,transform.parent.position);
         gameObject.SetActive(false);
     }
     void OnDisable()

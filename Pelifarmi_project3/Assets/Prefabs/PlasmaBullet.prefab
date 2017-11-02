@@ -156,11 +156,13 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   speed: 7
-  deathTimer: 2
+  deathTimer: 1
   powerUpInt: 0
   chooseSide: 1
   hshot: -1
   vShot: 1
+  explosionprefab: {fileID: 1566057199377948, guid: a82778d7f903db041be34b27ceaad4e4,
+    type: 2}
 --- !u!212 &212530841897252092
 SpriteRenderer:
   m_ObjectHideFlags: 1
@@ -202,3 +204,4 @@ SpriteRenderer:
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
+  m_MaskInteraction: 0

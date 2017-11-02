@@ -8,6 +8,9 @@ public class Player_Shooting : MonoBehaviour {
     public float firerate = 1f;
     private float nextfire = 0.0f;
     PlayerController _playermove;
+    public AudioClip Shoot;
+    private AudioSource source;
+   
 	// Use this for initialization
 	void Start () {
        /* _playermove = GetComponent<PlayerController>();
@@ -15,6 +18,7 @@ public class Player_Shooting : MonoBehaviour {
         { Debug.Log("GUUU	UUUUUF!"); }
         */
         _playermove = GetComponentInParent<PlayerController>();
+        source = GetComponent<AudioSource>();
 	}
 
 	// Update is called once per frame
@@ -49,6 +53,7 @@ public class Player_Shooting : MonoBehaviour {
         obj.transform.position = new Vector3(transform.position.x, transform.position.y, transform.position.z);
         obj.transform.rotation = transform.rotation;
         obj.SetActive(true);
+        source.PlayOneShot(Shoot);
     }
 
     void MovePlayer()

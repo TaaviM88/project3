@@ -4,8 +4,6 @@ using UnityEngine;
 
 public class EnemyHealth : MonoBehaviour 
 {
-
-
 	public int startingHealth = 100;
 	public int currentHealth;
 	public int scoreValue = 10;
@@ -16,6 +14,7 @@ public class EnemyHealth : MonoBehaviour
 	ParticleSystem hitParticles;
 	CapsuleCollider capsuleCollider;
 	bool isDead;
+    public GameObject explosionPrefab;
 
 	// Use this for initialization
 	void Awake () 
@@ -23,7 +22,6 @@ public class EnemyHealth : MonoBehaviour
 		anim = GetComponent <Animator> ();
 		enemyAudio = GetComponent <AudioSource> ();
 		capsuleCollider = GetComponent <CapsuleCollider> ();
-
 		currentHealth = startingHealth;
 	}
 	
@@ -59,7 +57,10 @@ public class EnemyHealth : MonoBehaviour
 
 		//enemyAudio.clip = deathClip;
 		//enemyAudio.Play ();
-		Destroy (gameObject);
+        enemyAudio.PlayOneShot(deathClip);
+        GameObject explosion = GameObject.Instantiate(explosionPrefab);
+        explosion.transform.position = this.transform.position;
+		Destroy (gameObject,0.1f);
 	}
 
     private void OnCollisionEnter2D(Collision2D coll)
