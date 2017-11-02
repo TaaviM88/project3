@@ -55,13 +55,11 @@ public class EnemyHealth : MonoBehaviour
 	{
 		isDead = true;
 
-		capsuleCollider.isTrigger = true;
-
 		//anim.SetTrigger ("Dead");
 
 		//enemyAudio.clip = deathClip;
 		//enemyAudio.Play ();
-		Destroy (gameObject, 2f);
+		Destroy (gameObject);
 	}
 
     private void OnCollisionEnter2D(Collision2D coll)
