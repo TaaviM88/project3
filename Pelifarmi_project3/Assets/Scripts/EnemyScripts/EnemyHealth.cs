@@ -38,7 +38,7 @@ public class EnemyHealth : MonoBehaviour
 		if(isDead)
 			return;
 
-		enemyAudio.Play ();
+		//enemyAudio.Play ();
 
 		currentHealth -= amount;
 
@@ -59,8 +59,8 @@ public class EnemyHealth : MonoBehaviour
 
 		//anim.SetTrigger ("Dead");
 
-		enemyAudio.clip = deathClip;
-		enemyAudio.Play ();
+		//enemyAudio.clip = deathClip;
+		//enemyAudio.Play ();
 		Destroy (gameObject, 2f);
 	}
 

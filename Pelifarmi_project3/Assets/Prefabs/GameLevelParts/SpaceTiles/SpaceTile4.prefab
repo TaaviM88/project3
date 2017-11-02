@@ -20,7 +20,7 @@ GameObject:
   m_Component:
   - component: {fileID: 4438020686944596}
   - component: {fileID: 108996817228131310}
-  m_Layer: 0
+  m_Layer: 13
   m_Name: Point light (86)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -36,7 +36,7 @@ GameObject:
   m_Component:
   - component: {fileID: 4712765809278058}
   - component: {fileID: 108237371157941242}
-  m_Layer: 0
+  m_Layer: 13
   m_Name: Point light (91)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -52,7 +52,7 @@ GameObject:
   m_Component:
   - component: {fileID: 4543522870656850}
   - component: {fileID: 108508977140050344}
-  m_Layer: 0
+  m_Layer: 13
   m_Name: Point light (68)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -68,7 +68,7 @@ GameObject:
   m_Component:
   - component: {fileID: 4590304494693132}
   - component: {fileID: 108315653682319480}
-  m_Layer: 0
+  m_Layer: 13
   m_Name: Point light (79)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -84,7 +84,7 @@ GameObject:
   m_Component:
   - component: {fileID: 4633544770876918}
   - component: {fileID: 108308924143982310}
-  m_Layer: 0
+  m_Layer: 13
   m_Name: Point light (69)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -100,7 +100,7 @@ GameObject:
   m_Component:
   - component: {fileID: 4310664981735620}
   - component: {fileID: 108947546435964044}
-  m_Layer: 0
+  m_Layer: 13
   m_Name: Point light (80)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -116,7 +116,7 @@ GameObject:
   m_Component:
   - component: {fileID: 4327818534379750}
   - component: {fileID: 108307655381718420}
-  m_Layer: 0
+  m_Layer: 13
   m_Name: Point light (93)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -132,7 +132,7 @@ GameObject:
   m_Component:
   - component: {fileID: 4508652653072010}
   - component: {fileID: 108468818699474322}
-  m_Layer: 0
+  m_Layer: 13
   m_Name: Point light (82)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -148,7 +148,7 @@ GameObject:
   m_Component:
   - component: {fileID: 4378595305569660}
   - component: {fileID: 108800064732449864}
-  m_Layer: 0
+  m_Layer: 13
   m_Name: Point light (99)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -164,7 +164,7 @@ GameObject:
   m_Component:
   - component: {fileID: 4790188405262600}
   - component: {fileID: 108279486210651532}
-  m_Layer: 0
+  m_Layer: 13
   m_Name: Point light (87)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -180,7 +180,7 @@ GameObject:
   m_Component:
   - component: {fileID: 4568512080174632}
   - component: {fileID: 108234783541438328}
-  m_Layer: 0
+  m_Layer: 13
   m_Name: Point light (78)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -196,7 +196,7 @@ GameObject:
   m_Component:
   - component: {fileID: 4876094614097968}
   - component: {fileID: 108645295194790010}
-  m_Layer: 0
+  m_Layer: 13
   m_Name: Point light (73)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -212,7 +212,7 @@ GameObject:
   m_Component:
   - component: {fileID: 4861813421129396}
   - component: {fileID: 108989073428038334}
-  m_Layer: 0
+  m_Layer: 13
   m_Name: Point light (97)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -228,7 +228,7 @@ GameObject:
   m_Component:
   - component: {fileID: 4631802292710808}
   - component: {fileID: 108433202229140404}
-  m_Layer: 0
+  m_Layer: 13
   m_Name: Point light (88)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -244,7 +244,7 @@ GameObject:
   m_Component:
   - component: {fileID: 4059285917832708}
   - component: {fileID: 108129399695728506}
-  m_Layer: 0
+  m_Layer: 13
   m_Name: Point light (72)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -260,7 +260,7 @@ GameObject:
   m_Component:
   - component: {fileID: 4029453945135452}
   - component: {fileID: 108065230745090276}
-  m_Layer: 0
+  m_Layer: 13
   m_Name: Point light (77)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -276,7 +276,7 @@ GameObject:
   m_Component:
   - component: {fileID: 4290099115748128}
   - component: {fileID: 108468825993011864}
-  m_Layer: 0
+  m_Layer: 13
   m_Name: Point light (76)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -292,7 +292,7 @@ GameObject:
   m_Component:
   - component: {fileID: 4001931370361794}
   - component: {fileID: 108814051832812120}
-  m_Layer: 0
+  m_Layer: 13
   m_Name: Point light (89)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -308,7 +308,7 @@ GameObject:
   m_Component:
   - component: {fileID: 4436318963034698}
   - component: {fileID: 108656895976473206}
-  m_Layer: 0
+  m_Layer: 13
   m_Name: Point light (85)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -324,7 +324,7 @@ GameObject:
   m_Component:
   - component: {fileID: 4044840601113958}
   - component: {fileID: 108993889808218656}
-  m_Layer: 0
+  m_Layer: 13
   m_Name: Point light (96)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -340,7 +340,7 @@ GameObject:
   m_Component:
   - component: {fileID: 4406604241922600}
   - component: {fileID: 108857110410005446}
-  m_Layer: 0
+  m_Layer: 13
   m_Name: Point light (92)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -356,7 +356,7 @@ GameObject:
   m_Component:
   - component: {fileID: 4230688451197902}
   - component: {fileID: 108559999993784358}
-  m_Layer: 0
+  m_Layer: 13
   m_Name: Point light (67)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -372,7 +372,7 @@ GameObject:
   m_Component:
   - component: {fileID: 4865043271045258}
   - component: {fileID: 108966638485228310}
-  m_Layer: 0
+  m_Layer: 13
   m_Name: Point light (94)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -388,7 +388,7 @@ GameObject:
   m_Component:
   - component: {fileID: 4640141446831434}
   - component: {fileID: 108637067791957628}
-  m_Layer: 0
+  m_Layer: 13
   m_Name: Point light (71)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -404,7 +404,7 @@ GameObject:
   m_Component:
   - component: {fileID: 4127352769089768}
   - component: {fileID: 108303882215648336}
-  m_Layer: 0
+  m_Layer: 13
   m_Name: Point light (98)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -420,7 +420,7 @@ GameObject:
   m_Component:
   - component: {fileID: 4541151119486446}
   - component: {fileID: 108612141228747936}
-  m_Layer: 0
+  m_Layer: 13
   m_Name: Point light (95)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -436,7 +436,7 @@ GameObject:
   m_Component:
   - component: {fileID: 4957374549932270}
   - component: {fileID: 108600991656401978}
-  m_Layer: 0
+  m_Layer: 13
   m_Name: Point light (81)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -452,7 +452,7 @@ GameObject:
   m_Component:
   - component: {fileID: 4600399922469094}
   - component: {fileID: 108209148989673592}
-  m_Layer: 0
+  m_Layer: 13
   m_Name: Point light (90)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -468,7 +468,7 @@ GameObject:
   m_Component:
   - component: {fileID: 4358486321738344}
   - component: {fileID: 108418771163861246}
-  m_Layer: 0
+  m_Layer: 13
   m_Name: Point light (74)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -484,7 +484,7 @@ GameObject:
   m_Component:
   - component: {fileID: 4932951146247774}
   - component: {fileID: 108067482878916854}
-  m_Layer: 0
+  m_Layer: 13
   m_Name: Point light (83)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -500,7 +500,7 @@ GameObject:
   m_Component:
   - component: {fileID: 4742691524870400}
   - component: {fileID: 108512213039792242}
-  m_Layer: 0
+  m_Layer: 13
   m_Name: Point light (70)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -516,7 +516,7 @@ GameObject:
   m_Component:
   - component: {fileID: 4977459299091762}
   - component: {fileID: 108374699487138208}
-  m_Layer: 0
+  m_Layer: 13
   m_Name: Point light (84)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -534,7 +534,7 @@ GameObject:
   - component: {fileID: 33650366810019012}
   - component: {fileID: 64963932407605482}
   - component: {fileID: 23958097502841300}
-  m_Layer: 0
+  m_Layer: 13
   m_Name: SpaceTile4
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -550,7 +550,7 @@ GameObject:
   m_Component:
   - component: {fileID: 4475789873957612}
   - component: {fileID: 108177578726164926}
-  m_Layer: 0
+  m_Layer: 13
   m_Name: Point light (75)
   m_TagString: Untagged
   m_Icon: {fileID: 0}

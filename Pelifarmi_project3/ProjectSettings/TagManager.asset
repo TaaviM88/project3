@@ -6,6 +6,7 @@ TagManager:
   tags:
   - Bullet
   - CameraCollision
+  - Enemy
   layers:
   - Default
   - TransparentFX
@@ -20,7 +21,7 @@ TagManager:
   - CameraCollision
   - Ignore
   - Enemy
-  - 
+  - Background
   - 
   - 
   - 

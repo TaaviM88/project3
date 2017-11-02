@@ -20,7 +20,7 @@ GameObject:
   m_Component:
   - component: {fileID: 4145441022833528}
   - component: {fileID: 108685675239668804}
-  m_Layer: 0
+  m_Layer: 13
   m_Name: Point light (2)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -36,7 +36,7 @@ GameObject:
   m_Component:
   - component: {fileID: 4504571403672582}
   - component: {fileID: 108473917610329858}
-  m_Layer: 0
+  m_Layer: 13
   m_Name: Point light (8)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -52,7 +52,7 @@ GameObject:
   m_Component:
   - component: {fileID: 4164636161756952}
   - component: {fileID: 108817931784581536}
-  m_Layer: 0
+  m_Layer: 13
   m_Name: Point light (3)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -70,7 +70,7 @@ GameObject:
   - component: {fileID: 33631998620488016}
   - component: {fileID: 64484285285668860}
   - component: {fileID: 23119669445968380}
-  m_Layer: 10
+  m_Layer: 13
   m_Name: SpaceTile1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -86,7 +86,7 @@ GameObject:
   m_Component:
   - component: {fileID: 4504967298638220}
   - component: {fileID: 108301049769210994}
-  m_Layer: 0
+  m_Layer: 13
   m_Name: Point light (4)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -102,7 +102,7 @@ GameObject:
   m_Component:
   - component: {fileID: 4162462176688844}
   - component: {fileID: 108153871265127448}
-  m_Layer: 0
+  m_Layer: 13
   m_Name: Point light (6)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -118,7 +118,7 @@ GameObject:
   m_Component:
   - component: {fileID: 4362673323154700}
   - component: {fileID: 108043796557599494}
-  m_Layer: 0
+  m_Layer: 13
   m_Name: Point light (5)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -134,7 +134,7 @@ GameObject:
   m_Component:
   - component: {fileID: 4483493581500866}
   - component: {fileID: 108464461040236042}
-  m_Layer: 0
+  m_Layer: 13
   m_Name: Point light
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -150,7 +150,7 @@ GameObject:
   m_Component:
   - component: {fileID: 4973249646846484}
   - component: {fileID: 108007326998931686}
-  m_Layer: 0
+  m_Layer: 13
   m_Name: Point light (7)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -166,7 +166,7 @@ GameObject:
   m_Component:
   - component: {fileID: 4491936426277972}
   - component: {fileID: 108054140411983694}
-  m_Layer: 0
+  m_Layer: 13
   m_Name: Point light (1)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -325,7 +325,7 @@ MeshRenderer:
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
   m_Materials:
-  - {fileID: 2100000, guid: b50c4156defcd4f408befe4abb696cf2, type: 2}
+  - {fileID: 2100000, guid: 5bc19a006faca42eb8db6e3073b5db7a, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
