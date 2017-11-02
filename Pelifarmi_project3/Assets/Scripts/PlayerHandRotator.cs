@@ -13,6 +13,7 @@ public class PlayerHandRotator : MonoBehaviour
     {
         Vector2 positionOnScreen = Camera.main.WorldToViewportPoint(transform.position);
         Vector2 mouseOnScreen = (Vector2)Camera.main.ScreenToViewportPoint(Input.mousePosition);
+
         float angle = AngleBetweenTwoPoints(positionOnScreen, mouseOnScreen);
         transform.rotation = Quaternion.Euler(new Vector3(0f, 0f, angle));
     }

@@ -14,9 +14,9 @@ public class PlayerController : MonoBehaviour {
     private float nextfire = 0.0f;*/
 	// Use this for initialization
 	void Start () {
-        GameObject obj = GameObject.FindGameObjectWithTag("MainCamera");
+        /*GameObject obj = GameObject.FindGameObjectWithTag("MainCamera");
         obj.gameObject.SendMessage("Start");
-        obj.gameObject.SendMessage("GoToPlayer");
+        obj.gameObject.SendMessage("GoToPlayer");*/
         _rb = GetComponent<Rigidbody2D>();
         _handrotation = GetComponentInChildren<PlayerHandRotator>();
 	}

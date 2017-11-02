@@ -29,8 +29,14 @@ public class Camera_script_2 : MonoBehaviour {
         }
 
         var cameraHalfWidth = GetComponent<Camera>().orthographicSize * ((float) Screen.width / Screen.height);
-        x = Mathf.Clamp(x,_min.x+ cameraHalfWidth, _max.x - cameraHalfWidth);
-        y = Mathf.Clamp(y,_min.y + cameraHalfWidth , _max.y -cameraHalfWidth);
-        transform.position = new Vector3(x,y,transform.position.z);
+        Vector2 cameraBottomleft = (Vector2)Camera.main.ScreenToWorldPoint(new Vector2(0,0));
+        Vector2 cameraTopRight = (Vector2)Camera.main.ScreenToWorldPoint(new Vector2(Camera.main.pixelWidth, Camera.main.pixelHeight));
+        
+        /*x = Mathf.Clamp(x,_min.x+ cameraHalfWidth, _max.x - cameraHalfWidth);
+        y = Mathf.Clamp(y,_min.y + cameraHalfWidth , _max.y -cameraHalfWidth);*/
+        if (cameraBottomleft.x < Bounds.bounds.min.x && cameraBottomleft.y < Bounds.bounds.min.y && cameraTopRight.x < Bounds.bounds.max.x && cameraTopRight.y < Bounds.bounds.max.y)
+        {
+            transform.position = new Vector3(x, y, transform.position.z);
+        }
     }
 }
