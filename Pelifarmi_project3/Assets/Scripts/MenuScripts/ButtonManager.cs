@@ -9,8 +9,9 @@ public class ButtonManager : MonoBehaviour {
     {
         source = GetComponent<AudioSource>();
     }
-    public void LoadNewSceneBtn(string newGameLevel)
+    public void NewGameBtn(string newGameLevel)
     {
+        
         source.PlayOneShot(ButtonSoundEffect);
         SceneManager.LoadScene(newGameLevel);
         Time.timeScale = 1;
