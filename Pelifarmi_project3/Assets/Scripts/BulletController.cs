@@ -80,7 +80,7 @@ public class BulletController : MonoBehaviour {
     private void OnCollisionEnter2D(Collision2D coll)
     {
        // if (coll.gameObject.tag == "Enemy" || coll.gameObject.tag == "Obstacle")
-        if(coll.gameObject.tag == "CameraCollision")
+		if(coll.gameObject.tag == "CameraCollision" || coll.gameObject.tag == "Obstacle")
         {
             Destroy();
         }
