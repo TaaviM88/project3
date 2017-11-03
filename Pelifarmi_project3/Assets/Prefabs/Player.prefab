@@ -221,6 +221,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   firerate: 0.25
+  Shoot: {fileID: 0}
 --- !u!114 &114536121632937460
 MonoBehaviour:
   m_ObjectHideFlags: 1
