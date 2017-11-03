@@ -10,7 +10,7 @@ public class Player_Shooting : MonoBehaviour {
     PlayerController _playermove;
     public AudioClip Shoot;
     private AudioSource source;
-   
+        
 	// Use this for initialization
 	void Start () {
        /* _playermove = GetComponent<PlayerController>();

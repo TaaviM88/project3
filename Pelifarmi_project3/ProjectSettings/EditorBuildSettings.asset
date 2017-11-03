@@ -11,3 +11,6 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenet/GameLevel.unity
     guid: 3dbf0a3279ee24712b75c8f3c0bd1de6
+  - enabled: 1
+    path: Assets/Scenet/Credits.unity
+    guid: 8a64978ebe1438d4a9866dbbbe3e09e5
