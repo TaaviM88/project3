@@ -23,12 +23,11 @@ public class EnemyAttack : MonoBehaviour
 		//player = GameObject.FindGameObjectWithTag ("Player");
         if (player == null)
         {
-            Debug.Log("LUL, ei löydy ");
             player = GameObject.FindGameObjectWithTag("Player");
         }
         if (player != null)
         {
-            Debug.Log("LUL2");
+          
             playerHealth = player.GetComponent<PlayerHealth>();
         }
 		//enemyHealth = GetComponent<EnemyHealth>();

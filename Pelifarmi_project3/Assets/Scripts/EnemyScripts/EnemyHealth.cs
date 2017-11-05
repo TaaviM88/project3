@@ -15,7 +15,11 @@ public class EnemyHealth : MonoBehaviour
 	CapsuleCollider capsuleCollider;
 	bool isDead;
     public GameObject explosionPrefab;
-
+    public GameObject _healtDrop;
+    public GameObject _timeDrop;
+    private GameObject _Spawn;
+    Score _score;
+    public int _enemyScore = 10;
 	// Use this for initialization
 	void Awake () 
 	{
@@ -23,12 +27,14 @@ public class EnemyHealth : MonoBehaviour
 		enemyAudio = GetComponent <AudioSource> ();
 		capsuleCollider = GetComponent <CapsuleCollider> ();
 		currentHealth = startingHealth;
+        _score = GameObject.Find("ScoreManager").GetComponent<Score>();
 	}
 	
 	// Update is called once per frame
 	void Update () 
 	{
-		
+        if (_score == null)
+        { _score = GameObject.Find("ScoreManager").GetComponent<Score>(); Debug.Log("Ei löydy scorea"); }
 	}
 
 	public void TakeDamage ()
@@ -60,6 +66,8 @@ public class EnemyHealth : MonoBehaviour
         enemyAudio.PlayOneShot(deathClip);
         GameObject explosion = GameObject.Instantiate(explosionPrefab);
         explosion.transform.position = this.transform.position;
+        _score.AddScore(_enemyScore);
+        GeneratePowerUp();
 		Destroy (gameObject,0.1f);
 	}
 
@@ -71,6 +79,26 @@ public class EnemyHealth : MonoBehaviour
             coll.gameObject.SendMessage("Destroy",SendMessageOptions.DontRequireReceiver);
         }
     }
+    void GeneratePowerUp()
+    {
+        int getpwr = Random.Range(0, 100);
 
+        if (getpwr <= 66)
+        {
+            SpawnPowerUp();
+        }
+        if (getpwr >= 80)
+        {
+            SpawnTime();
+        }
+    }
+    void SpawnPowerUp()
+    {
+        _Spawn = Instantiate(_healtDrop, transform.position, Quaternion.identity) as GameObject;
+    }
+    void SpawnTime()
+    {
+        _Spawn = Instantiate(_timeDrop, transform.position, Quaternion.identity) as GameObject;
+    }
 
 }

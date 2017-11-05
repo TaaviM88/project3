@@ -42,7 +42,7 @@ Transform:
   m_GameObject: {fileID: 1118173037147726}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: -34.3, y: -22.9, z: -2}
-  m_LocalScale: {x: 50, y: 50, z: 1}
+  m_LocalScale: {x: 65, y: 65, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 0
@@ -207,6 +207,9 @@ MonoBehaviour:
   amount: 10
   explosionPrefab: {fileID: 1010952516761670, guid: 55925a82b3017724e9a68e9dcaa3d347,
     type: 2}
+  _healtDrop: {fileID: 1506768578049288, guid: 7b6cd18e62cd45e47b7b19cae500d031, type: 2}
+  _timeDrop: {fileID: 1148806294335920, guid: 2edd09dcbcc2cc749b832444b051eda9, type: 2}
+  _enemyScore: 10
 --- !u!114 &114672484491303946
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -231,8 +234,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d44f23d2eecf4440a9e893efe3ff7007, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  target: {fileID: 0}
-  speed: 10
+  _target: {fileID: 0}
+  speed: 15
   minDistance: 1
 --- !u!212 &212730572904680822
 SpriteRenderer:
@@ -275,3 +278,4 @@ SpriteRenderer:
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
+  m_MaskInteraction: 0

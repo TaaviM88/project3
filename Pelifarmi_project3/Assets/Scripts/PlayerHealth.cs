@@ -2,40 +2,52 @@
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
-
+using UnityEngine.SceneManagement;
 public class PlayerHealth : MonoBehaviour {
 
 	public int startingHealth = 100;
+    public int MaxHealth = 100;
 	public int currentHealth;
+    public int healtRestore = 20;
 	public Slider healthSlider;
 	public Image damageImage;
 	public AudioClip deathClip;
+    public AudioClip healthpickupSFX;
 	public float flashSpeed = 5f;
 	public Color flashColour = new Color(1f, 0f, 0f, 0.1f);
-
-
+    public int extraTime = 10;
+    private UIGameOver _gameover;
 	//Animator anim;
-	//AudioSource playerAudio;
+	AudioSource playerAudio;
 	//controller
 	//PlayerController playerMovement;
 	//PlayerShooting playerShooting;
 	bool isDead;
 	bool damaged;
+    GameManager _gameManager;
 
 
 	void Awake ()
 	{
 		//anim = GetComponent <Animator> ();
 		//Audio
-		//playerAudio = GetComponent <AudioSource> ();
+		playerAudio = GetComponent <AudioSource> ();
 		//playerMovement = GetComponent <PlayerMovement> ();
 		//playerShooting = GetComponentInChildren <PlayerShooting> ();
 		currentHealth = startingHealth;
+        _gameover = GameObject.Find("GameOver").GetComponent<UIGameOver>();
+        
 	}
 
 
 	void Update ()
 	{
+        if (_gameover == null)
+        {
+            Debug.Log("Voi vittu");
+            _gameover = GameObject.Find("GameOver").GetComponent<UIGameOver>();
+        }
+        
 		if(damaged)
 		{
 			damageImage.color = flashColour;
@@ -44,6 +56,7 @@ public class PlayerHealth : MonoBehaviour {
 		{
 			damageImage.color = Color.Lerp (damageImage.color, Color.clear, flashSpeed * Time.deltaTime);
 		}
+        Debug.Log(currentHealth);
 		damaged = false;
 	}
 
@@ -68,7 +81,7 @@ public class PlayerHealth : MonoBehaviour {
 	void Death ()
 	{
 		isDead = true;
-
+        RestartLevel();
 
 		//anim.SetTrigger ("Die");
 
@@ -80,10 +93,31 @@ public class PlayerHealth : MonoBehaviour {
 		//playerController.enabled = false;
 
 	}
-
-
-	/*public void RestartLevel ()
+    void OnTriggerEnter2D(Collider2D col)
+    {
+        if (col.gameObject.tag == "HealthPickUp")
+        {
+            if (currentHealth < MaxHealth)
+            {
+                currentHealth += healtRestore;
+                playerAudio.PlayOneShot(healthpickupSFX);
+            }
+            Destroy(col.gameObject);
+        }
+        if (col.gameObject.tag == "TimePickUp")
+        {
+            _gameManager = GameObject.Find("GameManager").GetComponent<GameManager>();
+            if (_gameManager == null)
+            { Debug.Log("Ei löydy!"); }
+            _gameManager.AddTime(extraTime);
+            playerAudio.PlayOneShot(healthpickupSFX);
+            
+            Destroy(col.gameObject);
+        }
+    }
+	public void RestartLevel ()
 	{
-		SceneManager.LoadScene (0);
-	}*/
+        //_gameover.Show();
+		SceneManager.LoadScene ("Credits");
+	}
 }

@@ -8,6 +8,8 @@ TagManager:
   - CameraCollision
   - Enemy
   - Obstacle
+  - HealthPickUp
+  - TimePickUp
   layers:
   - Default
   - TransparentFX
